@@ -1,6 +1,7 @@
 git init - //initialize a local repo
 git add . -//staging work done 
 git commit -//safely stored in the local database
+git config --global init.default branch -// setting up default branch names
 
 working with git hub -distributed 
 git clone <url> -//clone from github 
@@ -11,3 +12,4 @@ git push - moving your data from local repo to github
 
 git config --list --show-origin -// show all setting of repo you are working on 
 
+git config --list - //check configuration settings 
