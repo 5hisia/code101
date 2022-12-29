@@ -1,0 +1,2 @@
+#!bin/bash
+git apt install git-all
