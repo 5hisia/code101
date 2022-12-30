@@ -1,15 +1,46 @@
-git init - //initialize a local repo
-git add . -//staging work done 
-git commit -//safely stored in the local database
-git config --global init.default branch -// setting up default branch names
+working with local git repo
 
-working with git hub -distributed 
-git clone <url> -//clone from github 
+git init - //initialize a local repo
+git config --global init.default branch -// setting up default branch names
+git remote add origin <github repo url> // pushing to remote repository 
+
+setting up a repo from git 
+
+git clone <https://{accesstoken}@url> -//clone from from a remote repo 
+
 git config --global user.email <git email> - //setting up identity
 git config --global user.name <username> - //setting up identity 
-
-git push - moving your data from local repo to github
-
 git config --list --show-origin -// show all setting of repo you are working on 
-
 git config --list - //check configuration settings 
+
+working with github 
+
+git add . - //staging work done (adds all of the modified files to the index)
+git add file1 file2 - // stage specific files 
+git commit -m "your commit message" -//safely stores the staged work locally
+git push - moving your data from local repo to a remote server
+git status -//checks changes made and not staged
+
+other 
+
+working with branches 
+
+git branch branch_name -// creating a branch 
+git checkout branch_name -// switch branch
+gti checkout -b branch_name -// create and switch to the newly created branch 
+git push origin master -// push to the master branch
+git push origin branch_name -// push to specic branch 
+
+next time using a branch
+
+git checkout branch_name 
+git pull origin branch_name -// pulls what others have worked on 
+
+merging with master branch 
+
+git checkout master
+git merger branch_name
+
+checking history 
+
+git log --graph --pretty=tformat:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%an %cr)%Creset' --abbrev-commit --date=relative  
