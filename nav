@@ -1,0 +1,7 @@
+Navigation commands
+pwd - check dir 
+cp - copy or rename files
+cd - change working directory 
+touch - create a file
+mkdir create a directory 
+rm -r remove a non-empty directory

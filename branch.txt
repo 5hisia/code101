@@ -1,0 +1,8 @@
+branching means diverging from the main line of development to continue working on a code 
+
+
+git branch <branch> //creating a branch
+git checkout <branch name> //switching to a branch 
+git checkout -b <branch name> //creating and switching to a new branch 
+git branch -a //list branches
+
